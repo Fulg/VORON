@@ -1,9 +1,10 @@
 ; homeall file for use with dc42 Duet firmware on CoreXY printers
-; This file assumes the endstop switches are at the low end of each axis.
-; Reverse the X and Y movement for high-end switches.
+; This file assumes the endstop switches are at the high end of each axis.
+; Reverse the X and Y movement for low-end switches.
 ; Adjust the bed upper and lower limits in config.g (M208 commands) to get the correct homing positions
 
 T-1                       ; deselect any active tool
+M561                      ; kill any active self-leveling
 
 G91                       ; relative mode
 G1 Z5 F500

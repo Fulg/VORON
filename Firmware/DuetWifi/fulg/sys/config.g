@@ -73,7 +73,7 @@ M92 E471.886:471.886                            ; Set extruder steps/mm
 ; Z probe and compensation definition
 M557 X20:280 Y60:280 S20
 M558 P5 X0 Y0 Z1 H5 F100 T7000                  ; use Zprobe input pin
-G31 X9 Y50 Z1.10 P25                            ; set the probe XY offset, Z height and signal threshold
+G31 X9 Y50 Z1.12 P25                            ; set the probe XY offset, Z height and signal threshold
 
 M556 S100 X0 Y0 Z0                              ; Put your axis compensation here
 M912 P0 S0                                      ; Put your CPU temperature sensor correction here

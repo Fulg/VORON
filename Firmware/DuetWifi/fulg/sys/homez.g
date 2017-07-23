@@ -1,4 +1,5 @@
 T-1
+M561                      ; kill any active self-leveling
 G91
 G1 Z5 F200
 G90
